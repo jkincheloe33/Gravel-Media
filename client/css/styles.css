@@ -49,3 +49,13 @@
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+
+/**************************************
+*
+* ABOUT
+*
+***************************************/
+
+.jumbotron-about {
+    height: 100vh;
+}

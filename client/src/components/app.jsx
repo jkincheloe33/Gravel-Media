@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Home from './home';
 import Nav from './nav';
+import About from './about';
 import GoodbyeWorld from './goodbye';
 
 class Navigation extends Component {
@@ -11,12 +12,11 @@ class Navigation extends Component {
             <Router>
                 <Fragment>
                     < Nav />
-                    < Home />
-                    {/* <Link to="/goodbye">Goodbye</Link>
+                    {/* <Link to="/goodbye">Goodbye</Link> */}
                     <Switch>
-                        <Route exact path="/" component={HelloWorld} />
-                        <Route path="/goodbye" component={GoodbyeWorld} />
-                    </Switch> */}
+                        <Route exact path="/" component={Home} />
+                        <Route path="/about" component={About} />
+                    </Switch>
                 </Fragment>
             </Router>
         )
