@@ -43,6 +43,7 @@
 }
 
 .header-container h1 {
+    color:white;
     font-family: 'Quicksand', sans-serif;
     font-size: 3em;
     text-transform: uppercase;
