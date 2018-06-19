@@ -1,3 +1,26 @@
+
+/**************************************
+*
+* NAVIGATION
+*
+***************************************/
+
+.nav-container {
+    background-color: rgba(243, 214, 51, 0);
+    box-shadow: 0px .5px 10px black;
+}
+
+.nav-container a {
+    color: lightgrey;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-container a:hover {
+    color: white;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
 /**************************************
 *
 * HOME
@@ -7,6 +30,8 @@
 .jumbotron-header {
     height: 100vh;
     position: relative;
+    background: url('../img/background.jpg');
+    background-size: cover;
 }
 
 .header-container {
@@ -15,4 +40,11 @@
     left:50%;
     transform: translate(-50%,-50%);
     text-align: center;
+}
+
+.header-container h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
