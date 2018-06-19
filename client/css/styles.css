@@ -1,24 +1,22 @@
-
 /**************************************
 *
 * NAVIGATION
 *
 ***************************************/
-
 .nav-container {
-    background-color: rgba(243, 214, 51, 0);
-    box-shadow: 0px .5px 10px black;
+  background-color: rgba(243, 214, 51, 0);
+  box-shadow: 0px .5px 10px black;
 }
 
 .nav-container a {
-    color: lightgrey;
-    font-family: 'Quicksand', sans-serif;
+  color: lightgrey;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .nav-container a:hover, .nav-container img:hover {
-    color: white;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
+  color: white;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 
 /**************************************
@@ -26,28 +24,27 @@
 * HOME
 *
 ***************************************/
-
 .jumbotron-header {
-    height: 100vh;
-    position: relative;
-    background: url('../img/background.jpg');
-    background-size: cover;
+  height: 100vh;
+  position: relative;
+  background: url("../img/background.jpg");
+  background-size: cover;
 }
 
-.header-container {
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+.jumbotron-header div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.header-container h1 {
-    color:white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 3em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+.jumbotron-header div h1 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 /**************************************
@@ -55,7 +52,29 @@
 * ABOUT
 *
 ***************************************/
-
 .jumbotron-about {
-    height: 100vh;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.747)), url("../img/about.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.jumbotron-about div {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.jumbotron-about div h1 {
+  background: linear-gradient(#027ea3, #ff52f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jumbotron-about div p {
+  padding-top: 20px;
+  color: rgba(245, 245, 245, 0.63);
 }
