@@ -15,7 +15,7 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-.nav-container a:hover {
+.nav-container a:hover, .nav-container img:hover {
     color: white;
     -webkit-animation-name: pulse;
     animation-name: pulse;

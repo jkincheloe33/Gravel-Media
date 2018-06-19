@@ -8,7 +8,8 @@ class Nav extends Component {
     render() {
         return (
             <nav className="navbar fixed-bottom navbar-expand-sm nav-container" >
-                <a className="navbar-brand" href="#">GM</a>
+                <a className="navbar-brand p-0" href="#">
+                    <img src="../../img/logo2.png" width="40" height="40" className="d-inline-block align-top pr-1 animated" alt="" /></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
