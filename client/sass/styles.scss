@@ -95,43 +95,58 @@
 ***************************************/
 
 .work-container {
+    height: 100vh;
+    background: black;
+    position: relative;
 
-    div {
-        height: 20vh;
+    .work-row {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         width: 100%;
-        border: 2px solid black;
+
+        img {
+            width: 100%;
+        }
     }
 
-    .workOne {
-        background: linear-gradient(to right,
-            rgba(2, 125, 163, 0.8),
-            rgba(255, 82, 241, 0.8)
-        ), url('../img/glasslands.png');
-        background-size: cover;
+    .work-item {
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+
+            p {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        }
     }
 
-    .workTwo {
-        background: linear-gradient(to left,
-            rgba(2, 125, 163, 0.8),
-            rgba(255, 82, 241, 0.8)
-        ), url('../img/joshkincheloe.png');
-        background-size: cover;
-    }
-
-    .workThree {
-        background: linear-gradient(to right,
-            rgba(2, 125, 163, 0.8),
-            rgba(255, 82, 241, 0.8)
-        ), url('../img/glassarrow.png');
-        background-size: cover;
+    .work-item:hover .overlay {
+        opacity: 1;
     }
 }
 
 .contact-container {
     height: 40vh;
     background-color: mediumaquamarine;
-
-    img {
-        width: 100%;
-    }
 }

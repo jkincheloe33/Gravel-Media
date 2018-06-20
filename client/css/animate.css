@@ -43,19 +43,17 @@
     animation-fill-mode: both;
 }
 
+.animatedSix {
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
 .animated.infinite, .animatedFive.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-
-/* @keyframes type{
-    from { width: 0; }
-  } */
-/*
-.type {
-    -webkit-animation-name: type;
-    animation-name: type;
-  } */
 
 @-webkit-keyframes bounce {
   from,
