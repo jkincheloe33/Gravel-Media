@@ -4,7 +4,7 @@ const Work = () => {
 
     return (
         <Fragment>
-            <div className="container-fluid work-container">
+            <div className="container-fluid work-container animated fadeIn">
                 <div className="work-row m-auto">
                     <div className="row pl-1 pr-1 m-auto work-images">
                         <div className="col-6 col-sm-4 col-md-4 p-0 animated work-item">
