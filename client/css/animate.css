@@ -48,56 +48,14 @@
   animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes myFirst {
-    0%   {background: linear-gradient(
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1)), url('../img/background.jpg');
-        background-size: cover}
-    25%  {background: linear-gradient(
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0.25)), url('../img/background.jpg');
-        background-size: cover}
-    50%   {background: linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)), url('../img/background.jpg');
-        background-size: cover}
-    75%   {background: linear-gradient(
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0)), url('../img/background.jpg');
-        background-size: cover}
-    100%  {background: linear-gradient(
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0)), url('../img/background.jpg');
-        background-size: cover}
-}
-
-@keyframes myFirst {
-    0%   {background: linear-gradient(
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1)), url('../img/background.jpg');
-        background-size: cover}
-    25%  {background: linear-gradient(
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0.25)), url('../img/background.jpg');
-        background-size: cover}
-    50%   {background: linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)), url('../img/background.jpg');
-        background-size: cover}
-    75%   {background: linear-gradient(
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0)), url('../img/background.jpg');
-        background-size: cover}
-    100%  {background: linear-gradient(
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0)), url('../img/background.jpg');
-        background-size: cover}
-}
-
-.myFirst {
-    -webkit-animation-name: myFirst;
-    animation-name: myFirst;
-  }
+/* @keyframes type{
+    from { width: 0; }
+  } */
+/*
+.type {
+    -webkit-animation-name: type;
+    animation-name: type;
+  } */
 
 @-webkit-keyframes bounce {
   from,
