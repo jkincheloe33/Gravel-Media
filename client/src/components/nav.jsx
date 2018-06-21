@@ -18,9 +18,6 @@ class Nav extends Component {
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item pr-5">
-                                <Link to="/" className="nav-link animated" >Home</Link>
-                            </li>
-                            <li className="nav-item pr-5">
                                 <Link to="/about" className="nav-link animated" >About</Link>
                             </li>
                             <li className="nav-item pr-5">
