@@ -6,10 +6,24 @@ class Nav extends Component {
         super(props);
     }
 
+    componentDidMount() {
+        let doc = window.document;
+        console.log(doc.body.clientWidth);
+
+        if (doc.body.clientWidth < 576) {
+            this.nav.classList.add('navbar-light', 'bg-light');
+            this.nav.classList.remove('navbar-dark');
+        } else {
+            this.nav.classList.add('navbar-dark');
+            this.nav.classList.remove('navbar-light');
+        }
+    }
+
+
     render() {
         return (
             <Fragment>
-                <nav className="navbar fixed-bottom navbar-expand-sm navbar-dark nav-container" >
+                <nav ref={(nav) => { this.nav = nav; }} className="navbar fixed-bottom navbar-expand-sm nav-container" id="navbar">
                     <Link to="/" className="navbar-brand p-0" >
                         <img src="../../img/logo2.png" width="40" height="40" className="d-inline-block align-top pr-1 animated" alt="" /></Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
