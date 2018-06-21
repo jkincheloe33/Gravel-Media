@@ -9,7 +9,7 @@ const About = () => {
                         Let us bring your vision to life.
                     </h1>
                     <p className="animatedFour fadeInUp">
-                        Gravel Media is a full service design agency. From branding to web and mobile applications, we can your idea and develope it to suit your needs.
+                        Gravel Media is a full service design agency. From branding to web and mobile applications, we take your idea and develop it to suit your needs.
                         </p>
                 </div>
             </div>
