@@ -9,8 +9,8 @@
         "shape": {
             "type": "circle",
             "stroke": {
-                "width": 1,
-                "color": "#ccc"
+                "width": 0,
+                "color": "#fff"
             }
         },
         "opacity": {
@@ -25,14 +25,14 @@
             "value": 2
         },
         "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 150
         },
         "move": {
             "enable": true,
             "speed": 1,
             "out_mode": "out",
-            "direction": "bottom"
+            "direction": "random"
         }
     },
     "interactivity": {
@@ -41,7 +41,7 @@
                 "enable": true,
                 "mode": [
                     "grab",
-                    "repulse"
+                    "bubble"
                 ]
             },
             "onclick": {
