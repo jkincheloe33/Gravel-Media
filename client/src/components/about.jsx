@@ -15,7 +15,7 @@ class About extends Component {
         return (
             <Fragment>
                 <div className="mb-0 jumbotron-about animated fadeIn" id="particles-about">
-                    <div className="about-container pl-1 pr-1">
+                    <div className="pl-1 pr-1">
                         <h1 className="animated fadeInDown">
                             Let us bring your vision to life.
                         </h1>

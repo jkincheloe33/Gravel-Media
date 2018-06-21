@@ -67,7 +67,7 @@
     div {
         width: 85%;
         position: absolute;
-        top: 50%;
+        top: 45%;
         left:50%;
         transform: translate(-50%,-50%);
         text-align: center;
@@ -83,7 +83,7 @@
 
         p {
             padding-top: 20px;
-            color: rgba(245, 245, 245, 0.63);
+            color: rgba(255, 255, 255, 0.8);
         }
     }
 }
@@ -168,4 +168,22 @@
     }
 
 
+}
+
+@media (min-width: 768px) {
+    .jumbotron-about {
+
+        div {
+            width: 65%;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .jumbotron-about {
+
+        div {
+            width: 55%;
+        }
+    }
 }
