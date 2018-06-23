@@ -95,7 +95,8 @@
 ***************************************/
 
 .work-container {
-    background: rgb(233, 139, 139);
+    min-height: 100vh;
+    background: black;
     position: relative;
 
     .work-row {
@@ -122,7 +123,7 @@
                     -webkit-text-fill-color: transparent;
                     width: 85%;
                     font-family: 'Quicksand', 'sans-serif';
-                    font-size: 1em;
+                    font-size: .75em;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -133,6 +134,8 @@
                 .JK-work {
                     text-align: right;
                 }
+
+
 
                 // .overlay {
                 //     position: absolute;
@@ -163,6 +166,30 @@
                 //         text-align: center;
                 //     }
                 // }
+            }
+
+            .work-footer {
+                background: linear-gradient(
+                    rgba(2, 125, 163, 0.8),
+                    rgba(255, 82, 241, 0.8)
+                    ), url('../img/nashville.jpg');
+                background-size: cover;
+                padding-top: 25px;
+                min-height: 25vh;
+                text-align: center;
+
+                h1 {
+                    font-size: 1.5em;
+                    font-family: 'Open Sans';
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    color: rgba(255, 255, 255, 0.9);
+                }
+
+                a {
+                    color: white;
+                }
             }
 
             .work-item:hover {

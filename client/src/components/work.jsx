@@ -34,6 +34,28 @@ const Work = () => {
                                 Full site for Toledo, OH based studio.
                             </p>
                         </div>
+                        <div className="col-12 work-footer">
+                            <h1>Connect with us!</h1>
+                            <div className="container">
+                                <div className="row w-75 m-auto">
+                                    <div className="col-4 p-0">
+                                        <a className="btn btn-social-icon btn-facebook p-1 animated" href="http://facebook.com/GlassArrowAudio">
+                                            <i className="fab fa-facebook fa-3x"></i>
+                                        </a>
+                                    </div>
+                                    <div className="col-4 p-0">
+                                        <a className="btn btn-social-icon btn-instagram p-1 animated" href="http://instagram.com/glassarrowaudio">
+                                            <i className="fas fa-camera-retro fa-3x"></i>
+                                        </a>
+                                    </div>
+                                    <div className="col-4 p-0">
+                                        <a className="btn btn-social-icon btn-twitter p-1 animated" href="http://twitter.com/jmochabear">
+                                            <i className="fab fa-twitter-square fa-3x"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
