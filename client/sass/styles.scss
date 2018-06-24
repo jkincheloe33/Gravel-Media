@@ -111,8 +111,9 @@
             }
 
             .work-item {
-                background: black;
+                background: rgb(245, 245, 245);
                 position: relative;
+                border-bottom: 1px solid black;
 
                 p {
                     background: linear-gradient(
@@ -174,34 +175,44 @@
                     rgba(255, 82, 241, 0.8)
                     ), url('../img/nashville.jpg');
                 background-size: cover;
+                position: relative;
                 padding-top: 25px;
-                min-height: 25vh;
+                min-height: 35vh;
                 text-align: center;
 
-                h1 {
-                    font-size: 1.5em;
-                    font-family: 'Open Sans';
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    letter-spacing: 5px;
-                    color: rgba(255, 255, 255, 0.9);
+                .footer-container {
+                    position: absolute;
+                    width: 100%;
+                    top: 47%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+
+                    h1 {
+                        font-size: 1.5em;
+                        font-family: 'Open Sans';
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                        color: rgba(255, 255, 255, 0.9);
+                    }
+
+                    a {
+                        color: white;
+                    }
                 }
 
-                a {
-                    color: white;
-                }
-            }
+                .work-item:hover {
 
-            .work-item:hover {
-
-                .overlay {
-                    opacity: 1;
-                }
-                img {
-                    animation: none;
-                    filter: grayscale(0);
-                    opacity: 1;
-                    transition: .5s ease;
+                    .overlay {
+                        opacity: 1;
+                    }
+                    img {
+                        animation: none;
+                        filter: grayscale(0);
+                        opacity: 1;
+                        transition: .5s ease;
+                    }
                 }
             }
         }

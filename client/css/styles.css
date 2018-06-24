@@ -101,8 +101,9 @@
 }
 
 .work-container .work-row .work-images .work-item {
-  background: black;
+  background: whitesmoke;
   position: relative;
+  border-bottom: 1px solid black;
 }
 
 .work-container .work-row .work-images .work-item p {
@@ -126,12 +127,22 @@
 .work-container .work-row .work-images .work-footer {
   background: linear-gradient(rgba(2, 125, 163, 0.8), rgba(255, 82, 241, 0.8)), url("../img/nashville.jpg");
   background-size: cover;
+  position: relative;
   padding-top: 25px;
-  min-height: 25vh;
+  min-height: 35vh;
   text-align: center;
 }
 
-.work-container .work-row .work-images .work-footer h1 {
+.work-container .work-row .work-images .work-footer .footer-container {
+  position: absolute;
+  width: 100%;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.work-container .work-row .work-images .work-footer .footer-container h1 {
   font-size: 1.5em;
   font-family: 'Open Sans';
   font-weight: 700;
@@ -140,15 +151,15 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-.work-container .work-row .work-images .work-footer a {
+.work-container .work-row .work-images .work-footer .footer-container a {
   color: white;
 }
 
-.work-container .work-row .work-images .work-item:hover .overlay {
+.work-container .work-row .work-images .work-footer .work-item:hover .overlay {
   opacity: 1;
 }
 
-.work-container .work-row .work-images .work-item:hover img {
+.work-container .work-row .work-images .work-footer .work-item:hover img {
   animation: none;
   filter: grayscale(0);
   opacity: 1;
