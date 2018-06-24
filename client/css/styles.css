@@ -86,7 +86,7 @@
 ***************************************/
 .work-container {
   min-height: 100vh;
-  background: black;
+  background: whitesmoke;
   position: relative;
 }
 
@@ -124,16 +124,28 @@
   text-align: right;
 }
 
-.work-container .work-row .work-images .work-footer {
+.work-container .work-row .work-images .work-item:hover .overlay {
+  opacity: 1;
+}
+
+.work-container .work-row .work-images .work-item:hover img {
+  animation: none;
+  filter: grayscale(0);
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.work-container .work-footer {
   background: linear-gradient(rgba(2, 125, 163, 0.8), rgba(255, 82, 241, 0.8)), url("../img/nashville.jpg");
   background-size: cover;
+  width: 100%;
   position: relative;
   padding-top: 25px;
   min-height: 35vh;
   text-align: center;
 }
 
-.work-container .work-row .work-images .work-footer .footer-container {
+.work-container .work-footer .footer-container {
   position: absolute;
   width: 100%;
   top: 47%;
@@ -142,7 +154,7 @@
   -ms-transform: translate(-50%, -50%);
 }
 
-.work-container .work-row .work-images .work-footer .footer-container h1 {
+.work-container .work-footer .footer-container h1 {
   font-size: 1.5em;
   font-family: 'Open Sans';
   font-weight: 700;
@@ -151,29 +163,41 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-.work-container .work-row .work-images .work-footer .footer-container a {
+.work-container .work-footer .footer-container a {
   color: white;
 }
 
-.work-container .work-row .work-images .work-footer .work-item:hover .overlay {
-  opacity: 1;
-}
-
-.work-container .work-row .work-images .work-footer .work-item:hover img {
-  animation: none;
-  filter: grayscale(0);
-  opacity: 1;
-  transition: .5s ease;
+.work-container .work-footer .footer-container a:hover {
+  color: gainsboro;
 }
 
 @media (min-width: 768px) {
   .jumbotron-about div {
     width: 65%;
   }
+  .work-container .work-row {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .work-container .work-row .work-images img, .work-container .work-row .work-images .work-item {
+    border-bottom: none;
+  }
+  .work-container .work-row .work-images .work-item p {
+    font-size: 1em;
+  }
+  .work-container .work-footer {
+    height: 50vh;
+  }
+  .work-container .work-footer .footer-container {
+    width: 50%;
+  }
 }
 
 @media (min-width: 900px) {
   .jumbotron-about div {
     width: 55%;
+  }
+  .work-container .work-row {
+    width: 75%;
   }
 }
