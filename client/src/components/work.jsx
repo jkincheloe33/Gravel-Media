@@ -18,13 +18,13 @@ class Work extends Component {
                                 <p>
                                     Glasslands <br />
                                     Full site for Nashville, TN based band.
-                            </p>
+                                </p>
                             </div>
                             <div className="col-4 p-0 animatedThree slideInRight work-item">
                                 <p className="JK-work">
                                     Josh Kincheloe <br />
                                     Full site for Nashville, TN based developer.
-                            </p>
+                                </p>
                             </div>
                             <div className="col-8 p-0 animatedThree slideInRight">
                                 <img src="../../img/jk.jpg" />
@@ -45,10 +45,11 @@ class Work extends Component {
                     <div className="row m-auto">
                         <div className="col-12 work-footer">
                             <div className="footer-container">
-                                <h1>Connect with us!</h1>
+                                <h1 className="pb-4">Connect with us!</h1>
                                 <div className="container">
                                     <div className="row w-75 m-auto">
-                                        <div className="col-4 p-0 animated slideInUp">
+                                        <a className="btn btn-light w-50 m-auto" href="mailto:gravelmediaco@gmail.com" role="button">Email Us!</a>
+                                        {/* <div className="col-4 p-0 animated slideInUp">
                                             <a className="btn btn-social-icon btn-facebook p-1" href="http://facebook.com/GlassArrowAudio">
                                                 <i className="fab fa-facebook fa-3x"></i>
                                             </a>
@@ -62,7 +63,7 @@ class Work extends Component {
                                             <a className="btn btn-social-icon btn-twitter p-1" href="http://twitter.com/jmochabear">
                                                 <i className="fab fa-twitter-square fa-3x"></i>
                                             </a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

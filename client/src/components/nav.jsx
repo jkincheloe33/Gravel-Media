@@ -56,7 +56,7 @@ class Nav extends Component {
                             <div className="modal-body text-center">
                                 <img src="../../img/logo.png" width="75%" />
                                 <p className="pt-2">Have any questions for us? Need a quote or more information? Please shoot us an email and we can chat!</p>
-                                <a className="btn btn-dark w-50" href="mailto:glassarrowaudio@gmail.com" role="button">Email Us!</a>
+                                <a className="btn btn-dark w-50" href="mailto:gravelmediaco@gmail.com" role="button">Email Us!</a>
                             </div>
                         </div>
                     </div>
